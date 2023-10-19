@@ -42,9 +42,7 @@ def train():
 
 def load_trained():
     env = gym.make(
-        "LunarLander-v2",
-        continuous = True,
-        gravity = -10.0,
+        "LunarLanderContinuous-v2",
         render_mode = "human"
     )
 
@@ -75,4 +73,4 @@ def load_trained():
     plt.ylabel('Score')
     plt.show()
 
-train()
+load_trained()

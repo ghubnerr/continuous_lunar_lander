@@ -11,7 +11,7 @@ def train():
         render_mode = None
     )
 
-    agent = Agent(alpha=0.000025, beta=0.00025, input_dims=[8], tau=0.001, env=env, batch_size=64, layer1_size=400, layer2_size=300, n_actions=2)
+    agent = Agent(alpha=0.000025, beta=0.00025, input_dims=[8], tau=0.001, env=env, batch_size=64, layer1_size=400, layer2_size=300, n_actions=4)
 
     np.random.seed(0)
     score_history = []
@@ -46,7 +46,7 @@ def load_trained():
         render_mode = "human"
     )
 
-    agent = Agent(alpha=0.000025, beta=0.00025, input_dims=[8], tau=0.001, env=env, batch_size=64, layer1_size=400, layer2_size=300, n_actions=2)
+    agent = Agent(alpha=0.000025, beta=0.00025, input_dims=[8], tau=0.001, env=env, batch_size=64, layer1_size=400, layer2_size=300, n_actions=4)
     agent.load_models()
 
     np.random.seed(0)
